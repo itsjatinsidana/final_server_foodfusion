@@ -1,0 +1,281 @@
+/*--
+	Coming-soon page style
+--*/ 
+.cs-content-container {
+	float:left;
+	width:620px;
+	min-height: 100vh;
+	position:relative;
+	z-index:2;
+	background:#212121;
+	padding:70px 100px;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+.cs-media {
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:620px;
+	right:0;
+	overflow:hidden;
+	z-index:1;
+}
+.cs-media:before {
+	content:'';
+	position:absolute;
+	left:70px;
+	bottom:40px;
+	width:50px;
+	height:50px;
+	border-left:1px dotted;
+	border-bottom:1px dotted;
+	z-index:10;
+}
+.cs-content-container .illustration_bg .bg{
+	opacity:0.2;
+}
+.cs-content-wrapper {
+	position:relative;
+	z-index:10;
+}
+.cs-content-wrapper h2 {
+	font-size:2.2em;
+	color:#fff;
+    font-family: 'Playfair Display', cursive;
+    font-weight: 600;
+	position:relative;
+}
+.cs-content-wrapper h3 {
+	font-family: 'Playfair Display', cursive;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+	margin-top:50px;
+}
+.cs-content-wrapper h2:after {
+    position: absolute;
+    content: '\25CF\25CF\25CF';
+    width: 50px;
+    left: 50%;
+    bottom: -20px;
+    margin-left: -25px;
+    font-size: 9px;
+    letter-spacing: 4px;
+}
+.cs-reserv_btn {
+	position:absolute;
+	top:40px;
+	right:90px;
+	z-index:20;
+	cursor:pointer;
+}
+.hero_btn.cs-reserv_btn:hover {
+	background:#fff;
+	color:#666;
+	border-color:transparent
+}
+.cs-reserv_btn i {
+	margin-left:20px;
+}
+.cs-content-container:before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    border: 1px dashed rgba(255,255,255,0.2);
+    z-index: 2;
+    box-shadow: 0px 0px 0px 50px rgba(255,255,255,0.03);
+}
+.cs-logo {
+	position:absolute;
+	top:120px;
+	left:50%;
+	width:140px;
+	z-index:4;
+	margin-left:-70px;
+}
+.cs-logo img {
+	height: auto;
+	width:140px;
+}
+.cs-subcribe-form {
+	margin:60px 0 50px;
+}
+.cs-subcribe-form p {
+	color:#fff;
+	font-size:11px;
+}
+.cs-social  {
+	display:inline-block;
+}
+.cs-social  li  {
+	float:left;
+}
+.cs-social li a {
+	width:36px;
+	height:36px;
+	line-height:36px;
+	float:left;
+	border:1px solid rgba(255,255,255,0.1);
+	border-left:none;
+	background:rgba(255,255,255,0.05);
+    transition: all 200ms linear;
+}
+.cs-social li:first-child a {
+	border-left:1px solid rgba(255,255,255,0.1);
+}
+.cs-social li a:hover {
+	background:#fff;
+} 
+.cs-media .hero_promo-wrap {
+	top:80px;
+	right: inherit;
+	left:90px;
+	margin-top:0;
+}
+.cs-media-container {
+	top:40%;
+	z-index:2;
+}
+.cs-contacts {
+	position:absolute;
+	right:70px;
+	bottom:40px;
+	z-index:20;
+}
+.cs-contacts li {
+	float:left;
+    color: #fff;
+    margin-right: 20px;
+    font-weight: 600;
+	font-size:12px;
+    transition: all .2s ease-in-out;
+}
+.cs-contacts li a {
+    color: #fff;
+}
+.cs-contacts li span {
+	margin-right:12px;
+}
+.countdown {
+	max-width:800px;
+	margin:0 auto;
+	position:relative;
+}
+.cs-countdown-item {
+	float:left;
+	width:25%;
+	color:#fff;
+	position:relative;
+	z-index:2;
+}
+.cs-countdown-item:before {
+	content:'';
+	position:absolute;
+	top:60%;
+	right:-20px;
+	width:40px;
+	height:1px;
+	border-top:1px dotted;
+}
+.cs-countdown-item.no-dec:before{
+	display:none;
+}
+.cs-countdown-item span {
+	font-size:94px;
+	font-weight:700;
+	font-family: 'Playfair Display', cursive;
+}
+.cs-countdown-item p {
+	padding-bottom:0;
+	color:#fff;
+	font-family: 'Playfair Display', cursive;
+	font-size:16px;
+}
+/*------responsive------------------------------------------------*/ 
+@media only screen and (max-width: 1350px) {
+.cs-media:before {
+	display:none;
+} 
+}
+
+@media only screen and (max-width: 1264px) {
+.cs-media .hero_promo-wrap {
+	left:20px;
+}
+.cs-reserv_btn {
+	right:20px;
+}		
+}
+@media only screen and (max-width: 1200px) {
+.cs-content-container {
+	float:left;
+	width:100%;
+	min-height: inherit;
+	padding:70px 100px;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+.cs-media {
+	position: relative;
+	left:0;
+	float:left;
+	width:100%;
+	padding:250px 0; 
+}
+.cs-logo {
+	top:70px;
+}
+.cs-countdown-item span {
+   font-size: 74px;
+}
+}
+@media only screen and  (max-width: 768px) {
+.cs-countdown-item {
+	width:50%;
+}
+.cs-content-container {
+    padding: 70px 30px;
+}
+.cs-content-container:before {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 0px 0px 0px 20px rgba(255,255,255,0.03);
+}
+.cs-contacts {
+    right:0;
+	left:0;
+}
+.cs-contacts li {
+	width:100%;
+	margin-bottom:12px;
+}
+}
+@media only screen and  (max-width: 564px) {
+.cs-reserv_btn {
+    top: 140px;
+    right: 50%;
+	width:220px;
+    padding: 14px 0;
+	margin-right:-110px; 
+}
+.cs-media .hero_promo-wrap {
+	left:50%;
+	width:200px;
+	margin-left:-100px;
+}
+.cs-countdown-item:before {
+	display:none;
+}
+.cs-countdown-item span {
+   font-size: 54px;
+}
+}
